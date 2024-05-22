@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="assets/styling/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div id="logo">Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <div class="text-content">
+                <h1>Hello, I'm Aditya Saini</h1>
+                <p>I'm a developer, innovator and entrepenuer based in the United States.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/asaini27" class="icon" target="_blank" title="GitHub"><b>GH</b></a>
+                    <a href="https://linkedin.com/in/adityasaini0027" class="icon" target="_blank" title="LinkedIn"><b>LI</b></a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/images/Subject.png" alt="Image of Aditya Saini">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <div class="flash-cards">
+                <div class="flash-card" id="education-card">
+                    <h3>Education</h3>
+                    <div class="card-content">
+                        <p><strong>University of California San Diego</strong><br>
+                        Bachelors of Science, Mathematics and Computer Science (Honors Program)<br>
+                        GPA: 3.6/4.0<br>
+                        September 2021 - June 2025</p>
+                    </div>
+                </div>
+                <div class="flash-card" id="skills-card">
+                    <h3>Skills</h3>
+                    <div class="card-content">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>C</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                            <li>TypeScript</li>
+                            <li>React Native</li>
+                            <li>Angular</li>
+                            <li>Flask</li>
+                            <li>Chi</li>
+                            <li>Django</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                            <li>Git</li>
+                            <li>OpenAI libraries</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>AWS</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flash-card" id="work-card">
+                    <h3>Work Experience</h3>
+                    <div class="card-content">
+                        <p><strong>Research Assistant, Computational Algebra & Noncommutative Geometry</strong><br>
+                        UC San Diego Mathematics Department, May 2024 - Present</p>
+                        <p><strong>Instructional Assistant</strong><br>
+                        UC San Diego Mathematics Department, Sept 2023 – Present</p>
+                        <p><strong>Software Engineer</strong><br>
+                        NeuroLeap Corp, June 2023 – December 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="projects">
+        <div class="projects-content">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Huffman Coding Compression Tool</h3>
+                    <div class="card-content">
+                        <p>Designed and implemented an algorithm to construct Huffman codes based on the frequency of characters in the input file, optimizing storage space usage.</p>
+                        <p>Crafted a robust algorithm to generate Huffman codes, which efficiently reduced file sizes by 40%, codes from the file header and decodes the compressed file to its original state.</p>
+                        <p>Delivered a scalable solution capable of encoding and decoding files up to 100 GB.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Graph Implementation for Epidemiological Analysis</h3>
+                    <div class="card-content">
+                        <p>Implemented a sophisticated Graph class API in C++ to simulate networks, pivotal in representing epidemiological data for HIV and COVID-19 transmission tracking.</p>
+                        <p>Applied the TN-93 model (a nucleotide substitution model used in bioinformatics) to calculate genomic distances, constructing undirected graphs that map transmission clusters, thus enabling public health researchers to predict and intervene in disease spread.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Sous Chef Full-Stack Application</h3>
+                    <div class="card-content">
+                        <p>Implemented OpenAI libraries to create an AI-driven mobile app for recipe suggestions and interactive cooking guidance.</p>
+                        <p>Developed the backend using Node.js and implemented API routes for login, register and interacting with AI model. Setup the database on MYSQL using JSON web tokens and tested through postman to note proper efficiency.</p>
+                        <p>Designed the frontend using react native components. Connected backend and frontend using fetch to make HTTPS requests to Node.js.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <!-- Contact form fields -->
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Aditya Saini</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
