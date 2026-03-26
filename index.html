@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aditya Saini — M.S. Computer Science @ Boston University. AI/ML, full-stack development, and research.">
+    <meta name="description" content="Aditya Saini — M.S. Computer Science @ Boston University. AI/ML, full-stack engineering, and research.">
     <meta name="color-scheme" content="light dark">
     <title>Aditya Saini | Portfolio</title>
     <script>
@@ -31,7 +31,7 @@
                     <span class="theme-icon theme-icon--moon" aria-hidden="true"><i class="fas fa-moon"></i></span>
                 </button>
                 <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <span class="hamburger"></span>
+                    <span class="hamburger"></span>
                 </button>
             </div>
             <nav class="main-nav" aria-label="Main navigation">
@@ -54,8 +54,9 @@
                 <div class="hero-text">
                     <p class="hero-greeting">Hello, I'm</p>
                     <h1 class="hero-name">Aditya Saini</h1>
-                    <p class="hero-tagline">M.S. Computer Science @ Boston University · AI/ML & Full-Stack</p>
-                    <p class="hero-bio">Building intelligent systems and full-stack applications. Research in ML, NLP, and computational algebra.</p>
+                    <p class="hero-tagline">M.S. Computer Science @ Boston University · Software Engineer</p>
+                    <p class="hero-dynamic">I build as a <span id="dynamic-role" aria-live="polite"></span></p>
+                    <p class="hero-bio">Building scalable full-stack systems and AI-powered products with strong focus on reliability, speed, and practical impact.</p>
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View Work</a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -64,12 +65,18 @@
                         <a href="https://www.linkedin.com/in/adityasaini0027/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=NT5WNKAAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://asaini27.github.io/Portfolio-AdityaSaini/" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe"></i></a>
                         <a href="mailto:adityasaini0027@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="skills-dynamic" aria-label="Dynamic skills showcase">
+                        <div class="skills-marquee" aria-hidden="true">
+                            <div class="skills-track" id="skills-track-a"></div>
+                            <div class="skills-track" id="skills-track-b"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="hero-avatar" aria-hidden="true">
-                        <!-- Add your photo: assets/images/Subject.png -->
                         <img src="assets/images/Subject.png" alt="Aditya Saini" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <span class="avatar-placeholder"><i class="fas fa-user"></i></span>
                     </div>
@@ -80,7 +87,9 @@
 
         <section id="about" class="section section--alt">
             <div class="container">
+                <p class="section-kicker">Profile</p>
                 <h2 class="section-title">About</h2>
+                <p class="section-subtitle">A concise snapshot of my background, strengths, and trajectory.</p>
                 <div class="about-grid">
                     <div class="about-card">
                         <h3><i class="fas fa-graduation-cap"></i> Education</h3>
@@ -88,23 +97,24 @@
                             <div class="edu-item">
                                 <strong>Boston University</strong>
                                 <span>Boston, MA</span>
-                                <p>M.S. Computer Science · Aug 2025 – May 2027</p>
+                                <p>M.S. Computer Science · Aug 2025 - May 2027</p>
                             </div>
                             <div class="edu-item">
-                                <strong>UC San Diego</strong>
+                                <strong>University of California San Diego</strong>
                                 <span>San Diego, CA</span>
-                                <p>B.S. Computer Science & Mathematics (Dept. Honors) · Sept 2021 – June 2025</p>
+                                <p>B.S. Computer Science and Mathematics · Sep 2021 - Jun 2025</p>
+                                <p class="award-highlight"><i class="fas fa-award" aria-hidden="true"></i> Dept. Honors · NIH Undergraduate Research Fellowship ($20,000)</p>
                             </div>
                         </div>
                     </div>
                     <div class="about-card">
-                        <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                        <h3><i class="fas fa-bolt"></i> Focus Areas</h3>
                         <div class="about-card-content skills-list">
-                            <span>Python, Java, C++, JavaScript, Go</span>
-                            <span>React, HTML/CSS, Next.js, Node.js, REST API, FastAPI</span>
-                            <span>PostgreSQL, SQL, MongoDB</span>
-                            <span>Docker, AWS, Azure, Git</span>
-                            <span>Pandas, PyTorch, TensorFlow, HuggingFace, scikit-learn, LangChain</span>
+                            <span>AI-powered product engineering</span>
+                            <span>Full-stack web and mobile systems</span>
+                            <span>Scalable backend APIs and data pipelines</span>
+                            <span>Applied ML, NLP, and analytics</span>
+                            <span>Research-to-product execution</span>
                         </div>
                     </div>
                 </div>
@@ -113,35 +123,41 @@
 
         <section id="experience" class="section">
             <div class="container">
-                <h2 class="section-title">Experience</h2>
+                <p class="section-kicker">Career</p>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Product-minded engineering across AI systems, health workflows, and scalable backend platforms.</p>
                 <div class="timeline">
                     <article class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3>Intern – AI/ML Software Engineer</h3>
-                                <span class="timeline-date">June 2024 – July 2025</span>
+                                <h3>Software Engineer Intern</h3>
+                                <span class="timeline-date">Jan 2026 - Present</span>
                             </div>
-                            <p class="timeline-org">AiDA Lab @ UC San Diego Health</p>
-                            <ul>
-                                <li>Developed a data processing, model training, inference, and benchmarking full-stack app for datasets of up to 15,000 records.</li>
-                                <li>Improved radiologist efficiency by 30% by building and deploying a full-stack pipeline to verify radiologist interpretation with inference from multimodal LLMs ingesting over 10,000 reports.</li>
-                                <li>Awarded fellowship worth $25,000.</li>
-                            </ul>
+                            <p class="timeline-org">BlackFacts (BU Spark)</p>
+                            <p class="timeline-summary">Built CivicChat: a privacy-first civic assistant with location-aware insights and citation-backed RAG, cutting research time for users.</p>
                         </div>
                     </article>
                     <article class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3>Intern – Software Engineer</h3>
-                                <span class="timeline-date">June 2023 – Dec 2023</span>
+                                <h3>Software Development Researcher</h3>
+                                <span class="timeline-date">Jun 2024 - Jul 2025</span>
+                            </div>
+                            <p class="timeline-org">AiDA (UC San Diego Health)</p>
+                            <p class="timeline-summary">Replaced manual review with automated web pipelines and unified data workflows, doubling analysis speed and improving consistency.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer Intern</h3>
+                                <span class="timeline-date">Jun 2023 - Dec 2023</span>
                             </div>
                             <p class="timeline-org">NeuroLeap Corp</p>
-                            <ul>
-                                <li>Delivered fast and reliable responses to client-facing applications through backend systems supporting over 7,000 user forms.</li>
-                                <li>Enhanced CI/CD reliability and accelerated production by automating testing for 80+ features and containerizing 25+ microservices.</li>
-                            </ul>
+                            <p class="timeline-summary">Improved reliability for client systems at scale through backend optimization, automated testing, and microservice containerization.</p>
                         </div>
                     </article>
                 </div>
@@ -150,27 +166,57 @@
 
         <section id="projects" class="section section--alt">
             <div class="container">
+                <p class="section-kicker">Portfolio</p>
                 <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Selected builds spanning full-stack, AI, ML, and blockchain systems.</p>
                 <div class="project-grid">
                     <article class="project-card">
                         <div class="project-card-inner">
-                            <h3>CivicChat <span class="badge">BlackFacts @ BU Spark!</span></h3>
-                            <p>Privacy-preserving, location-aware civic insights via a scalable AI-backed mobile-first app. Reduced civic research time by over 50% through automated, citation-backed document retrieval.</p>
+                            <h3>DevSurf</h3>
+                            <p class="project-meta">CSE 110: Advanced Software Engineering</p>
+                            <p class="project-summary">Built a secure developer journal with timeline-centric UX in a 6-person Agile team, shipping with high test confidence.</p>
+                            <div class="project-tags"><span>React</span><span>Agile</span><span>Testing</span></div>
+                            <a href="https://drive.google.com/file/d/1ZAOHkxdbAoka_GDXBcQm97TrCALcfPeM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </article>
                     <article class="project-card">
                         <div class="project-card-inner">
-                            <h3>DevSurf</h3>
-                            <p class="project-meta">CSE 110: Advanced Software Engineering @ UC San Diego</p>
-                            <p>Collaborated with a team of 6 following Agile workflow to build a note-taking and journaling app. Implemented multi-device accessibility and 95% testing coverage on core components.</p>
-                            <a href="https://drive.google.com/file/d/1ZAOHkxdbAoka_GDXBcQm97TrCALcfPeM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">View demo <i class="fas fa-external-link-alt"></i></a>
+                            <h3>Immutable Will Management dApp <span class="badge">1st Place BU Blockchain Hackathon/Pitchathon</span></h3>
+                            <p class="project-summary">Created and demoed a production-ready dApp for cryptoasset inheritance, integrating smart contracts and wallet flows under hackathon constraints.</p>
+                            <div class="project-tags"><span>React</span><span>Solidity</span><span>Web3</span></div>
+                            <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>SoulRealms</h3>
+                            <p class="project-summary">Designed a reusable Java game engine architecture that reduced duplicated logic and accelerated feature delivery across titles.</p>
+                            <div class="project-tags"><span>Java</span><span>OOP</span><span>Architecture</span></div>
+                            <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>FDA Device &amp; Patient Problem Extraction API</h3>
+                            <p class="project-summary">Built an async FastAPI data extraction service that converts FDA records into clean, typed, and query-ready outputs.</p>
+                            <div class="project-tags"><span>FastAPI</span><span>Python</span><span>APIs</span></div>
+                            <a href="https://github.com/asaini27/fda-device-FASTapi" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </article>
                     <article class="project-card">
                         <div class="project-card-inner">
                             <h3>Delivery Agent Rating Predictor</h3>
-                            <p>Led a team of six to build an ML model to predict delivery agent ratings using 15 features, achieving 90% accuracy. Identified delivery time and agent age as top predictors of customer satisfaction.</p>
+                            <p class="project-summary">Led a 6-member ML team to deliver a high-accuracy predictor and uncover the most influential drivers of customer satisfaction.</p>
+                            <div class="project-tags"><span>ML</span><span>scikit-learn</span><span>Analytics</span></div>
                             <a href="https://drive.google.com/file/d/1ZAOHkxdbAoka_GDXBcQm97TrCALcfPeM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>SousChef <span class="badge">Google Gemini App Developer Competition</span></h3>
+                            <p class="project-summary">Developed an AI mobile sous-chef with voice-first guidance and low-latency full-stack orchestration for hands-free cooking.</p>
+                            <div class="project-tags"><span>Gemini</span><span>Mobile</span><span>Voice AI</span></div>
+                            <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </article>
                 </div>
@@ -179,22 +225,27 @@
 
         <section id="extracurriculars" class="section">
             <div class="container">
+                <p class="section-kicker">Leadership</p>
                 <h2 class="section-title">Extracurriculars</h2>
+                <p class="section-subtitle">Research and teaching experiences focused on mentorship and real-world impact.</p>
                 <div class="cards-grid">
-                    <article class="card">
-                        <h3>BU Blockchain Hackathon / Pitchathon</h3>
-                        <span class="card-meta">Nov 2025 · 1st Place</span>
-                        <p>Awarded first place with a team of 4 for building an Immutable Will Management dApp for distribution of cryptoassets. Demoed a fully functional React app integrating smart contracts and crypto wallet, developed in under 6 hours.</p>
+                    <article class="card extra-card">
+                        <div class="extra-head">
+                            <span class="extra-icon"><i class="fas fa-flask" aria-hidden="true"></i></span>
+                            <h3>Graduate Researcher</h3>
+                        </div>
+                        <span class="card-meta">Boston University · Sep 2025 - Present</span>
+                        <p>Built data tools and ML workflows for global telecom and entrepreneurship datasets, enabling faster insight generation across sources.</p>
+                        <div class="extra-tags"><span>Research</span><span>ML Pipelines</span><span>Data Products</span></div>
                     </article>
-                    <article class="card">
-                        <h3>Graduate Research Assistant</h3>
-                        <span class="card-meta">Boston University · Sept 2025 – Present</span>
-                        <p>Designed a web tool for querying, filtering, and downloading from 50+ global telecom and entrepreneurship datasets. Predicted global entrepreneurial activity through an ML pipeline with feature engineering across multi-source datasets.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Instructional Assistant</h3>
-                        <span class="card-meta">UC San Diego · Sept 2023 – Oct 2024</span>
-                        <p>Instructed 5 courses in Math and Computer Science with 70+ “excellent” ratings. Conducted discussion sections, office hours, and one-on-one tutoring.</p>
+                    <article class="card extra-card">
+                        <div class="extra-head">
+                            <span class="extra-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></span>
+                            <h3>Teaching Assistant</h3>
+                        </div>
+                        <span class="card-meta">University of California San Diego · Sep 2023 - Oct 2024</span>
+                        <p>Supported 5 Math/CS courses through sections, office hours, and tutoring, earning strong student and faculty feedback.</p>
+                        <div class="extra-tags"><span>Mentorship</span><span>Instruction</span><span>Student Impact</span></div>
                     </article>
                 </div>
             </div>
@@ -202,11 +253,30 @@
 
         <section id="publications" class="section section--alt">
             <div class="container">
-                <h2 class="section-title">Publications & Presentations</h2>
+                <p class="section-kicker">Research</p>
+                <h2 class="section-title">Publications &amp; Presentations</h2>
+                <div class="pub-filters" role="tablist" aria-label="Filter publications by type">
+                    <button type="button" class="pub-filter is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+                    <button type="button" class="pub-filter" role="tab" aria-selected="false" data-filter="journal">Journal</button>
+                    <button type="button" class="pub-filter" role="tab" aria-selected="false" data-filter="conference">Conference</button>
+                    <button type="button" class="pub-filter" role="tab" aria-selected="false" data-filter="poster">Poster</button>
+                </div>
                 <ul class="publications-list">
-                    <li>Shant Malkasian, Aditya Saini, …, Albert Hsiao. “Large Language Model-Based Automated Monitoring of CCTA Reader Performance and Impact of CT-Fractional Flow Reserve,” <em>SCCT 2025</em>.</li>
-                    <li>Aditya Saini. “Modules over Fomin–Kirillov Algebras and Their Subalgebras,” <em>UCSD Lab Expo 2025</em> – Poster Presentation.</li>
-                    <li>Greenfeld, B., Mathison, S., Saini, A., Wynn, S. “Modules over Fomin-Kirillov algebras and their subalgebras,” <em>Involve</em>, 2024.</li>
+                    <li class="pub-item" data-type="conference">
+                        <span class="pub-year">2025</span>
+                        <p class="pub-text">Shant Malkasian, Aditya Saini, .., Albert Hsiao, “Large Language Model-Based Automated Monitoring of CCTA Reader Performance and Impact of CT-Fractional Flow Reserve,” <em>SCCT 2025</em>.</p>
+                        <button type="button" class="pub-copy" data-cite="Shant Malkasian, Aditya Saini, .., Albert Hsiao, Large Language Model-Based Automated Monitoring of CCTA Reader Performance and Impact of CT-Fractional Flow Reserve, SCCT 2025.">Copy citation</button>
+                    </li>
+                    <li class="pub-item" data-type="poster">
+                        <span class="pub-year">2025</span>
+                        <p class="pub-text">Aditya Saini, “Modules over Fomin–Kirillov Algebras and Their Subalgebras,” <em>UCSD Lab Expo 2025</em> - Poster Presentation.</p>
+                        <button type="button" class="pub-copy" data-cite="Aditya Saini, Modules over Fomin-Kirillov Algebras and Their Subalgebras, UCSD Lab Expo 2025 Poster Presentation.">Copy citation</button>
+                    </li>
+                    <li class="pub-item" data-type="journal">
+                        <span class="pub-year">2024</span>
+                        <p class="pub-text">Greenfeld, B., Mathison, S., Saini, A., Wynn, S., “Modules over Fomin-Kirillov algebras and their subalgebras;” <em>Involve</em>, 2024.</p>
+                        <button type="button" class="pub-copy" data-cite="Greenfeld, B., Mathison, S., Saini, A., Wynn, S., Modules over Fomin-Kirillov algebras and their subalgebras, Involve, 2024.">Copy citation</button>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -214,15 +284,16 @@
         <section id="contact" class="section contact-section">
             <div class="container">
                 <h2 class="section-title">Contact</h2>
-                <p class="contact-intro">Open to research, internships, and collaboration.</p>
+                <p class="contact-intro">Open to software engineering, research, and AI/ML collaboration opportunities.</p>
                 <div class="contact-info">
                     <a href="mailto:adityasaini0027@gmail.com"><i class="fas fa-envelope"></i> adityasaini0027@gmail.com</a>
-                    <a href="tel:+18585396025"><i class="fas fa-phone"></i> +1 (858) 539-6025</a>
+                    <a href="tel:+18585396025"><i class="fas fa-phone"></i> +1 (858)-539-6025</a>
                 </div>
                 <div class="contact-links">
                     <a href="https://www.linkedin.com/in/adityasaini0027/" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                     <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
                     <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=NT5WNKAAAAAJ" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    <a href="https://asaini27.github.io/Portfolio-AdityaSaini/" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fas fa-globe"></i> Website</a>
                 </div>
             </div>
         </section>
