@@ -49,7 +49,8 @@
     if (dynamicRole) {
         var roles = [
             'Software Engineer',
-            'AI/ML Builder',
+            'AI Agent Engineer',
+            'Forward-Deployed Engineer',
             'Full-Stack Developer',
             'Research-Driven Problem Solver'
         ];
@@ -85,10 +86,11 @@
     // Dynamic skills showcase in About section
     var skillsByGroup = [
         ['Python', 'C++', 'Java', 'TypeScript', 'Go', 'JavaScript', 'HTML', 'CSS', 'Solidity'],
-        ['React', 'Node.js', 'FastAPI', 'Django', 'Angular', '.NET', 'RESTful API'],
-        ['AWS', 'Azure', 'Docker', 'Git', 'Jira', 'Railway'],
-        ['Pandas', 'PyTorch', 'TensorFlow', 'HuggingFace', 'scikit-learn', 'LangChain'],
-        ['PostgreSQL', 'MongoDB', 'SQL']
+        ['LangGraph', 'LangChain', 'MCP', 'vLLM', 'RAG', 'LLM Evaluation'],
+        ['React', 'Next.js', 'Node.js', 'FastAPI', 'Django', 'Express', 'Angular', '.NET', 'RESTful API'],
+        ['AWS', 'Azure', 'Docker', 'GitHub Actions', 'Git', 'Jira', 'Railway'],
+        ['Pandas', 'PyTorch', 'TensorFlow', 'HuggingFace', 'scikit-learn'],
+        ['PostgreSQL', 'MongoDB', 'MySQL', 'DuckDB', 'Milvus', 'Azure AI Search', 'SQL']
     ];
     var allSkills = skillsByGroup.flat();
     var trackA = document.getElementById('skills-track-a');

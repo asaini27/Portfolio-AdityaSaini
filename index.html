@@ -56,7 +56,7 @@
                     <h1 class="hero-name">Aditya Saini</h1>
                     <p class="hero-tagline">M.S. Computer Science @ Boston University · Software Engineer</p>
                     <p class="hero-dynamic">I build as a <span id="dynamic-role" aria-live="polite"></span></p>
-                    <p class="hero-bio">Building scalable full-stack systems and AI-powered products with strong focus on reliability, speed, and practical impact.</p>
+                    <p class="hero-bio">Building production AI agents, RAG systems, and scalable full-stack platforms — from customer requirements to deployment — with a strong focus on reliability, safety, and practical impact.</p>
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View Work</a>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -105,16 +105,21 @@
                                 <p>B.S. Computer Science and Mathematics · Sep 2021 - Jun 2025</p>
                                 <p class="award-highlight"><i class="fas fa-award" aria-hidden="true"></i> Dept. Honors · NIH Undergraduate Research Fellowship ($20,000)</p>
                             </div>
+                            <div class="edu-item">
+                                <strong>Relevant Coursework</strong>
+                                <p>Graduate Algorithms · Distributed Systems · Natural Language Processing · Machine Learning · Streaming &amp; Event-Driven Systems</p>
+                            </div>
                         </div>
                     </div>
                     <div class="about-card">
                         <h3><i class="fas fa-bolt"></i> Focus Areas</h3>
                         <div class="about-card-content skills-list">
-                            <span>AI-powered product engineering</span>
-                            <span>Full-stack web and mobile systems</span>
+                            <span>Agentic AI systems (LangGraph, MCP)</span>
+                            <span>Forward-deployed, customer-facing engineering</span>
+                            <span>RAG, hybrid retrieval, and vector search</span>
+                            <span>LLM security and red-teaming</span>
+                            <span>Mechanistic interpretability research</span>
                             <span>Scalable backend APIs and data pipelines</span>
-                            <span>Applied ML, NLP, and analytics</span>
-                            <span>Research-to-product execution</span>
                         </div>
                     </div>
                 </div>
@@ -125,17 +130,40 @@
             <div class="container">
                 <p class="section-kicker">Career</p>
                 <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">Product-minded engineering across AI systems, health workflows, and scalable backend platforms.</p>
+                <p class="section-subtitle">Product-minded engineering across enterprise AI agents, civic AI, health workflows, and scalable backend platforms.</p>
                 <div class="timeline">
                     <article class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3>Software Engineer Intern</h3>
-                                <span class="timeline-date">Jan 2026 - Present</span>
+                                <h3>AI Product Development Intern</h3>
+                                <span class="timeline-date">May 2026 - Present</span>
                             </div>
-                            <p class="timeline-org">BlackFacts (BU Spark)</p>
-                            <p class="timeline-summary">Built CivicChat: a privacy-first civic assistant with location-aware insights and citation-backed RAG, cutting research time for users.</p>
+                            <p class="timeline-org">Synoptek · Boston, MA</p>
+                            <p class="timeline-summary">Architected Synthia, an enterprise IT operations agent on LangGraph, reporting directly to the CTO and owning development from customer requirements through production deployment.</p>
+                            <ul class="timeline-highlights">
+                                <li>Automated resolution for <strong>80%+ of targeted tickets</strong>, with <strong>33%+ resolved fully autonomously</strong> via confidence-gated, human-in-the-loop triage, classification, and verification.</li>
+                                <li>Embedded with customers as a <strong>forward-deployed engineer</strong>, shipping isolated per-tenant deployments with custom MCP integrations, knowledge bases, and SOPs — cutting average ticket resolution from <strong>120 minutes to 2 minutes (~98%)</strong>.</li>
+                                <li>Built hybrid retrieval (BM25 + vector search via Reciprocal Rank Fusion) over dual Azure AI Search indexes with tenant-isolated filters, achieving <strong>sub-200ms</strong> SOP and incident lookup.</li>
+                                <li>Scaled one platform across <strong>30+ client environments</strong> through a zero-trust per-tenant credential chain, integrating ServiceNow, Microsoft Graph, Active Directory, and Exchange behind a tiered plan-only / technician-approved / autonomous execution model.</li>
+                            </ul>
+                            <div class="project-tags"><span>LangGraph</span><span>MCP</span><span>Azure AI Search</span><span>PostgreSQL</span><span>ServiceNow</span></div>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer Intern</h3>
+                                <span class="timeline-date">Jan 2026 - May 2026</span>
+                            </div>
+                            <p class="timeline-org">BlackFacts Education Foundation (BU Spark)</p>
+                            <p class="timeline-summary">Partnered with stakeholders to turn civic-access requirements into CivicChat, a production civic AI platform delivering location-aware, multilingual civic information across <strong>100+ languages</strong>.</p>
+                            <ul class="timeline-highlights">
+                                <li>Designed a trust-weighted RAG system with automated ingestion, semantic retrieval, source attribution, and guardrails, cutting civic research time by <strong>~50%</strong> with citation-backed responses.</li>
+                                <li>Built a multi-provider LLM backend (OpenRouter with OpenAI fallback) and integrated geocoding for representative lookup across federal, state, and local government.</li>
+                            </ul>
+                            <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>RAG</span><span>OpenAI</span></div>
                         </div>
                     </article>
                     <article class="timeline-item">
@@ -146,7 +174,13 @@
                                 <span class="timeline-date">Jun 2024 - Jul 2025</span>
                             </div>
                             <p class="timeline-org">AiDA (UC San Diego Health)</p>
-                            <p class="timeline-summary">Replaced manual review with automated web pipelines and unified data workflows, doubling analysis speed and improving consistency.</p>
+                            <p class="timeline-summary">Built production LLM pipelines for automated monitoring of CCTA reader performance, published at <a href="#publications">SCCT 2025</a>.</p>
+                            <ul class="timeline-highlights">
+                                <li>Extracted and normalized clinical findings from <strong>10,000+ CCTA reports</strong>, turning unstructured physician narratives into structured datasets for diagnostic accuracy analysis.</li>
+                                <li>Built a <strong>7-source ETL system</strong> into PostgreSQL and a reusable human-in-the-loop prompt framework, improving clinical data processing time by <strong>~25%</strong>.</li>
+                                <li>Deployed containerized FastAPI services for ingestion, inference, and analytics, producing publication-ready benchmarking figures.</li>
+                            </ul>
+                            <div class="project-tags"><span>LLMs</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
                         </div>
                     </article>
                     <article class="timeline-item">
@@ -168,8 +202,48 @@
             <div class="container">
                 <p class="section-kicker">Portfolio</p>
                 <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">Selected builds spanning full-stack, AI, ML, and blockchain systems.</p>
+                <p class="section-subtitle">Selected builds spanning AI agents, LLM security, interpretability, streaming systems, full-stack, and blockchain.</p>
                 <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>Break It <span class="badge">1st Place SharkHack 2026</span></h3>
+                            <p class="project-summary">Built an AI red-teaming platform that probes LLM apps for prompt injection, jailbreaks, and data exfiltration, adjudicating successful exploits through a gamified interface. A parallel cascade-analysis engine scans multi-file codebases with multiple LLM workers and keeps findings at confidence ≥0.90.</p>
+                            <div class="project-tags"><span>LLM Security</span><span>Red-Teaming</span><span>Multi-Agent</span></div>
+                            <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" class="project-link">View <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>Julia: Scheduling Agent <span class="badge">Red Hat × IBM vLLM TOA 2026</span></h3>
+                            <p class="project-summary">Built a proactive voice agent that triages live conversation and runs calendar, email, and Slack actions through a plan-confirm-execute pipeline with sub-1.5s latency, serving three FP8-quantized Red Hat AI models on vLLM. Sandboxed in NemoClaw with grammar-guided structured outputs to block prompt injection from untrusted calendar content.</p>
+                            <div class="project-tags"><span>vLLM</span><span>Voice AI</span><span>Agents</span></div>
+                            <a href="https://github.com/asaini27" target="_blank" rel="noopener noreferrer" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>CivicChat</h3>
+                            <p class="project-meta">BU Spark × BlackFacts Education Foundation</p>
+                            <p class="project-summary">Production civic AI platform with location-aware context and multilingual support across 100+ languages. Trust-weighted RAG with citation-backed answers cut civic research time by ~50%, with OpenRouter/OpenAI fallback and representative lookup across federal, state, and local government.</p>
+                            <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>RAG</span></div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>Autointerpretation of Attention Circuits</h3>
+                            <p class="project-meta">Research Assistant · Prof. Mark Crovella, Boston University</p>
+                            <p class="project-summary">Scaling the ACC++ autointerpretation pipeline to the 176.8M-document Pile corpus with a streaming redesign, generating natural-language hypotheses for what attention circuits represent. Fixed a subtle RoPE transformation mismatch to reproduce exact outputs across 22,223 signals and 100 circuits.</p>
+                            <div class="project-tags"><span>Interpretability</span><span>PyTorch</span><span>LLMs</span></div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-inner">
+                            <h3>Streaming Vector Search: HoloStream</h3>
+                            <p class="project-meta">Streaming &amp; Event-Driven Systems</p>
+                            <p class="project-summary">Extended a disaggregated streaming engine with native k-NN vector search as a first-class operator, backed by remote Milvus and embedded DuckDB execution paths. Sustained ~1,900 records/sec at 176ms latency with 90% query correctness over 128-dimensional vectors.</p>
+                            <div class="project-tags"><span>Milvus</span><span>DuckDB</span><span>Streaming</span></div>
+                        </div>
+                    </article>
                     <article class="project-card">
                         <div class="project-card-inner">
                             <h3>DevSurf</h3>
@@ -232,11 +306,20 @@
                     <article class="card extra-card">
                         <div class="extra-head">
                             <span class="extra-icon"><i class="fas fa-flask" aria-hidden="true"></i></span>
-                            <h3>Graduate Researcher</h3>
+                            <h3>Graduate Researcher · ML Pipelines</h3>
                         </div>
-                        <span class="card-meta">Boston University · Sep 2025 - Present</span>
-                        <p>Built data tools and ML workflows for global telecom and entrepreneurship datasets, enabling faster insight generation across sources.</p>
+                        <span class="card-meta">Boston University · Prof. Irena Vodenska (BU MET) · Sep 2025 - Present</span>
+                        <p>Working with Prof. Irena Vodenska and a second faculty member to build data tools and machine learning pipelines for global telecom and entrepreneurship datasets, enabling faster insight generation across sources.</p>
                         <div class="extra-tags"><span>Research</span><span>ML Pipelines</span><span>Data Products</span></div>
+                    </article>
+                    <article class="card extra-card">
+                        <div class="extra-head">
+                            <span class="extra-icon"><i class="fas fa-brain" aria-hidden="true"></i></span>
+                            <h3>Graduate Researcher · Interpretability</h3>
+                        </div>
+                        <span class="card-meta">Boston University · Prof. Mark Crovella · Nov 2025 - Present</span>
+                        <p>Scaling autointerpretation of LLM attention circuits (ACC++) to the 176.8M-document Pile corpus to uncover what internal circuits represent, and using those insights for causal, feature-guided RAG that reranks retrieved context based on what LLMs actually use during reasoning. See the <a href="#projects">project details</a>.</p>
+                        <div class="extra-tags"><span>Interpretability</span><span>Attention Circuits</span><span>Causal RAG</span></div>
                     </article>
                     <article class="card extra-card">
                         <div class="extra-head">
@@ -244,7 +327,7 @@
                             <h3>Teaching Assistant</h3>
                         </div>
                         <span class="card-meta">University of California San Diego · Sep 2023 - Oct 2024</span>
-                        <p>Supported 5 Math/CS courses through sections, office hours, and tutoring, earning strong student and faculty feedback.</p>
+                        <p>Instructed 5 Math and CS courses through sections, office hours, and tutoring, earning 70+ "excellent" ratings from students and faculty.</p>
                         <div class="extra-tags"><span>Mentorship</span><span>Instruction</span><span>Student Impact</span></div>
                     </article>
                 </div>
